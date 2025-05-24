@@ -33,15 +33,11 @@ void setupPlayer()
 
 void updatePlayer()
 {
-	byte	joy1;
-	
-	joy1	= readJoystick1();
+	byte	joy1	= readJoystick1();
 
 	if ((joy1 & JoypadRight) != 0)
 	{
-		byte	allowedMove;
-
-		allowedMove	= MaxPlayerRight - playerX;
+		byte	allowedMove	= MaxPlayerRight - playerX;
 
 		if (MoveSpeed >= allowedMove)
 		{
@@ -104,10 +100,8 @@ void updatePlayerPosition()
 
 void updatePlayerTile()
 {
-	byte frame;
-	
 	// Each sprite is two tiles
-	frame	= currentFrame + currentFrame;
+	byte frame	= currentFrame + currentFrame;
 
 	selectSprite(PlayerSprite + 2);
 	setSpriteTile(PlayerSpritePattern + frame);
