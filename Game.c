@@ -4,6 +4,7 @@
 #include "RAMDefines.h"
 #include "../System/VRAMDefines.h"
 #include "../SystemLib/Include/Decompression.h"
+#include "../SystemLib/Include/ExtraRam.h"
 #include "../SystemLib/Include/Graphics.h"
 #include "../SystemLib/Include/Input.h"
 #include "../SystemLib/Include/Sprites.h"
